@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f3ebd3;
+}
+
+.content {
+    padding-top: 80px;
+}
+
+.hero{
+    padding-top: 200px;
+}
