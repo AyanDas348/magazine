@@ -19,15 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <div className={styles.container}>
-          <div className="h-screen">
-            <div className={styles.navbar}>
-              <Navbar />
-            </div>
-            <div className={styles.hero}>
-              <Hero />
-            </div>
+          <div className={styles.navbar}>
+            <Navbar />
           </div>
           <div className={styles.content}>
             {children}

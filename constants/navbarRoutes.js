@@ -1,8 +1,8 @@
 export const navbarRoutes = [
     {
         id: 'products',
-        title: 'Products',
-        href: '/products'
+        title: 'Our Story',
+        href: '/story'
     },
     {
         id: 'community',
@@ -10,23 +10,23 @@ export const navbarRoutes = [
         href: '/community'
     },
     {
-        id: 'markets',
-        title: 'Markets',
-        href: '/markets'
-    },
-    {
-        id: 'news',
-        title: 'News',
-        href: '/news'
+        id: 'merch',
+        title: 'Merch',
+        href: '/merch'
     },
     {
         id: 'brokers',
-        title: 'Brokers',
-        href: '/brokers'
+        title: 'Find Us',
+        href: '/find-us'
     },
     {
-        id: 'more',
-        title: 'More',
-        href: '/more'
+        id: 'markets',
+        title: 'The Dungeon',
+        href: '/dungeon'
+    },
+    {
+        id: 'about',
+        title: 'Take a Tour',
+        href: '/about'
     },
 ]

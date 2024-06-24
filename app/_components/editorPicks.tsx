@@ -46,7 +46,7 @@ const EditorPicks = () => {
                 <section className="mt-20">
                     <div className="grid auto-rows-min relative">
                         <div className="mb-6 items-center flex justify-between">
-                            <h2 className="inline scroll-mt-32 break-words font-[600] text-3xl">Editor Picks &gt;</h2>
+                            <h2 className="inline scroll-mt-32 break-words font-[600] text-3xl">Magazine Picks &gt;</h2>
                         </div>
                     </div>
                     <div className="mb-12">

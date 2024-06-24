@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '@/public/Black And White Aesthetic Minimalist Modern Simple Typography Coconut Cosmetics Logo (1080 x 1350 px).svg';
+import Logo from '@/public/logo.svg';
 import { navbarRoutes } from '@/constants/navbarRoutes'
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -7,14 +7,16 @@ import { Button } from '@/components/ui/button';
 const Navbar = () => {
     return (
         <div className="w-full mx-auto flex my-3 sticky items-center px-10">
-            {/* <div id="logo" className='w-[200px] h-[20px]'>
-                <Image
-                    src={Logo}
-                    alt="Logo"
-                    width={200}
-                    height={10}
-                />
-            </div> */}
+            <div id="logo" className='w-[200px] h-[20px]'>
+                <Link href={'/'}>
+                    <Image
+                        src={Logo}
+                        alt="Logo"
+                        width={200}
+                        height={10}
+                    />
+                </Link>
+            </div>
             <div id='navbarRoutes' className='w-full flex justify-center items-center flex-1'>
                 <ul className='flex gap-9 mx-8'>
                     {navbarRoutes.map((nav) => {

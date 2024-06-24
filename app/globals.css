@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/horizon.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body,
 :root {
   height: 100%;
   background-color: #f3ebd3;
+  font-family: 'CustomFont', sans-serif;
 }
 
 @layer base {
@@ -80,5 +88,6 @@ body,
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'CustomFont', sans-serif;
   }
 }
