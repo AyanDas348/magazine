@@ -21,9 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className={styles.container}>
-          <div className={styles.navbar}>
-            <Navbar />
-          </div>
+          <Navbar />
           <div className={styles.content}>
             {children}
           </div>
