@@ -22,11 +22,11 @@ const Navbar = () => {
                     <Sidebar />
                 </SheetContent>
             </Sheet>
-            <ul>
+            <ul className='hidden xl:flex pl-16'>
                 {navbarRoutes.map((route, index) => {
                     return (
                         <li key={index} className='inline-block list-none mx-8 cursor-pointer last:mr-0 group'>
-                            <Link href={route.href} className='uppercase py-4 inline-block transition-all ease-in hover:'>
+                            <Link href={route.href} className='uppercase py-4 inline-block transition-all ease-in'>
                                 {route.title}
                             </Link>
                             <ul className='absolute w-60 -mt-2 -z-50 transition-all ease-in px-3 opacity-0 bg-white group-hover:z-50 group-hover:opacity-100 group-hover:-mt-2'>
