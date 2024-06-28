@@ -20,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={styles.container}>
-          <Navbar />
+        <div>
+          <div className={styles.navbar}>
+            <Navbar />
+          </div>
           <div className={styles.content}>
             {children}
           </div>

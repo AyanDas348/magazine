@@ -9,12 +9,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'OilvareBase';
+  src: url('/font/OilvareBase.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 html,
 body,
 :root {
   height: 100%;
   background-color: #f3ebd3;
-  font-family: 'CustomFont', sans-serif;
+  font-family: 'OilvareBase', sans-serif;
 }
 
 @layer base {

@@ -34,7 +34,7 @@ const tradeTopics = [
 const Community = () => {
     return (
         <div className="!pt-0">
-            <h1 className="uppercase text-center text-xl lg:text-4xl mb-20">Explore the Community</h1>
+            <h1 className="uppercase text-center text-xl xl:text-4xl mb-20">Explore the Community</h1>
 
             <EditorPicks title="Trade Ideas" topics={tradeTopics} />
             <EditorPicks title="Educational Ideas" topics={tradeTopics} />

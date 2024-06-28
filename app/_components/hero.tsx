@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div className="w-full h-full flex items-center justify-center lg:items-start lg:justify-start lg:px-20">
+        <div className="w-full h-full flex items-center justify-center xl:items-start xl:justify-start xl:px-20">
             <div className="px-3 py-14 md:py-20 flex gap-x-4 flex-col">
                 <h1 className="text-left flex flex-col w-fit mb-4">
                     <span className="font-bold text-2xl md:text-8xl">Brand With</span>
@@ -8,7 +8,7 @@ const Hero = () => {
                     <span className="text-xs md:text-2xl pt-10">The best trade require research, then commitment.</span>
                 </h1>
                 <span id="searchBar" className="mb-6">
-                    <div className="outline-none overflow-visible relative items-center flex max-w-80 lg:py-3 py-1 px-4 cursor-pointer border rounded-[56px] bg-white shadow-md">
+                    <div className="outline-none overflow-visible relative items-center flex max-w-80 xl:py-3 py-1 px-4 cursor-pointer border rounded-[56px] bg-white shadow-md">
                         <div id="searchButton" className="items-center rounded-[50%] flex flex-shrink-0 h-10 justify-center w-10">
                             <span id="searchIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
