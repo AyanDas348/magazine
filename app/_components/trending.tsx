@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const carouselImages = [
     {
-        imageSrc: '/assets/porsce.jpg',
+        imageSrc: '/assets/Porsce.jpg',
         title: 'Fine Art Photography',
         description: 'This is quite different from documentary/ representational photography, which is used to portray a subject in a literal and objective...',
         author: 'Ankur Singh',
