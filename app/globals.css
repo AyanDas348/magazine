@@ -16,12 +16,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'InnovatorGrotesk';
+  src: url('/font/InnovatorGrotesk.otf') format('opentype');
+}
+
 html,
 body,
 :root {
   height: 100%;
-  background-color: #f3ebd3;
-  font-family: 'OilvareBase', sans-serif;
+  background-color: #F7F3F2;
+  /* font-family: 'InnovatorGrotesk', sans-serif; */
 }
 
 @layer base {
@@ -95,7 +100,7 @@ body,
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'CustomFont', sans-serif;
+    /* font-family: 'CustomFont', sans-serif; */
   }
 }
 

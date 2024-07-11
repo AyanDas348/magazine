@@ -34,11 +34,11 @@ export const navbarRoutes = [
         expand: false,
         expandItems: []
     },
-    {
-        id: 'about',
-        title: 'Take a Tour',
-        href: '/about',
-        expand: false,
-        expandItems: []
-    },
+    // {
+    //     id: 'about',
+    //     title: 'Take a Tour',
+    //     href: '/about',
+    //     expand: false,
+    //     expandItems: []
+    // },
 ]

@@ -4,11 +4,11 @@
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 50;
-    background-color: #f3ebd3;
+    background-color: transparent;
 }
 
 .dropdown-menu {
@@ -27,9 +27,9 @@
 }
 
 .content {
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 
-.hero {
+/* .hero {
     padding-top: 200px;
-}
+} */

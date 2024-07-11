@@ -9,16 +9,18 @@ import Sidebar from './sidebar';
 const Navbar = () => {
     const icons = [Home, Info, Tv, Calendar, Presentation, Phone];
     return (
-        <nav className="navbar flex w-full px-4 py-3 border-b shadow-md items-center justify-between xl:px-20 xl:mx-auto overflow-x-hidden">
+        <nav className="navbar flex w-full px-4 py-3 bg-transparent items-center justify-between xl:px-20 xl:mx-auto overflow-x-hidden text-white">
             <div className='flex items-center justify-center'>
-                <Image src={Logo} alt='logo' width={150} height={10} />
+                <Link href={'/'}>
+                    <Image src={Logo} alt='logo' width={150} height={10} />
+                </Link>
             </div>
 
             <Sheet>
                 <SheetTrigger className="">
                     <Menu className='xl:hidden' />
                 </SheetTrigger>
-                <SheetContent side="top" className="p-0 hover:bg-[#7c7c6c] text-white !bg-[#7c7c6c]">
+                <SheetContent side="top" className="p-0 hover:bg-[#7c7c6c] text-white !bg-[#7c7c6c] h-full">
                     <Sidebar />
                 </SheetContent>
             </Sheet>
