@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    position: fixed;
+    /* position: sticky; */
     top: 0;
     width: 100%;
     z-index: 50;
@@ -27,7 +27,8 @@
 }
 
 .content {
-    /* padding-top: 80px; */
+    padding-top: -100px;
+    top: 0;
 }
 
 /* .hero {
