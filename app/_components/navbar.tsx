@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Logo from '@/public/logo.svg';
 import { navbarRoutes } from '@/constants/navbarRoutes';
 import Link from 'next/link';
-import { Home, Tv, Presentation, Phone, Info, Calendar, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Sidebar from './sidebar';
 
@@ -16,11 +16,9 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             if (typeof window !== 'undefined') {
-                if (window.scrollY > lastScrollY) {
-                    // Scrolling down
+                if (window.scrollY !== lastScrollY  && window.scrollY !== 0) {
                     setShowNavbar(false);
                 } else {
-                    // Scrolling up
                     setShowNavbar(true);
                 }
                 setLastScrollY(window.scrollY);

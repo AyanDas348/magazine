@@ -2,6 +2,7 @@ import EditorPicks from "./_components/editorPicks";
 import Hero from "./_components/hero";
 import MarketSummary from "./_components/marketSummary";
 import Origin from "./_components/origin";
+import Partners from "./_components/partners";
 import Trending from "./_components/trending";
 
 const topics = [
@@ -55,7 +56,7 @@ export default function Home() {
       <EditorPicks title="Magazine picks" topics={topics}/>
       <Trending />
       <Origin />
-      <EditorPicks title="Channel Partners" topics={topics}/>
+      <Partners />
     </div>
   );
 }
