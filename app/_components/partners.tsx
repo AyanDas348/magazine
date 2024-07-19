@@ -50,7 +50,7 @@ const Partners = () => {
                         {carouselImages.map((item, index) => {
                             return (
                                 <div key={index} className='relative'>
-                                    <Image src={item.imageSrc} alt='image' width={133} height={166} className='min-h-[320px] max-h-[320px] min-w-[304px] rounded-full object-cover' />
+                                    <Image src={item.imageSrc} alt='image' width={133} height={166} className='min-h-[320px] max-h-[320px] min-w-[320px] rounded-full object-cover' />
                                     <p className='inset-0 flex items-center justify-center text-black bg-opacity-50 rounded-full pt-4 flex-col'>
                                         <span className='mb-2 text-xl font-semibold'>{item.title}</span>
                                         <p>Photographer</p>

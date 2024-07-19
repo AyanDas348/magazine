@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div>
+        <div className={styles.rootlayout}>
           <div className={styles.navbar}>
             <Navbar />
           </div>

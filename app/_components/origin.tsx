@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Origin = () => {
     return (
@@ -14,10 +15,10 @@ const Origin = () => {
                     We can have our own magazine and together form THE MGZN and this would empower us as artists to grow together, fail together and stand up together. We feel a great sense of responsibility and pride in making a positive impact on individuals, communities and your Magazine and in this process we hope to solve your purpose and ours too.
                 </p>
                 <span className="w-full flex">
-                    <span className="border border-white rounded-3xl w-fit flex items-center justify-evenly text-white cursor-pointer hover:shadow-lg">
+                    <Link href={'/story'} className="border border-white rounded-3xl w-fit flex items-center justify-evenly text-white cursor-pointer hover:shadow-lg">
                         <p className="px-5 py-2">Read More</p>
                         <ArrowUpRight className="mr-3"/>
-                    </span>
+                    </Link>
                 </span>
             </div>
             <div className="w-1/2 lg:flex items-center justify-center hidden">

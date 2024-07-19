@@ -1,4 +1,5 @@
 import styles from './index.module.css'
+
 const Story = () => {
     return (
         <div>
@@ -7,16 +8,30 @@ const Story = () => {
                     <h1>Our Story</h1>
                 </div>
                 <div className={styles.tagline}>
-                    <p>
-                        We work closely with artists across the globe and get the most valuable information, insights and resources for your growth.
-                    </p>
-                    <p>
-                        The name THE MGZN is very wisely chosen as we artist are meant to have our own magazine, where we can post our periodical publication containing articles and illustrations, often on a particular subject or aimed at a particular readership .we can have our own magazine and together form THE MGZN. So, we artist can grow together, fail together this is our soul purpose. We feel a great sense of responsibility and pride to have a positive impact on individuals, communities, and your Magazine. Hoping to solve your purpose and ours too.
-                    </p>
-                    <span className='flex flex-col !justify-end !w-full !items-end'>
-                        <h1>- Subha Abhishek</h1>
-                        <span>Founder</span>
+                    We work closely with artists across the globe and get the most valuable information, insights and resources for your growth. The name MGZN is very wisely chosen and it symbolizes how we artists are meant to get the limelight through our own magazines, where we not only publish our art but also the stories that made us.
+                </div>
+                <div className={styles.tagline}>
+                    <span className={styles['bold-pr-20']}>
+                        We can have our own magazine and together
+                        form THE MGZN and this would empower us
+                        as artists to grow together, fail together and
+                        stand up together.
                     </span>
+                    <div className=''>
+                        We feel a great sense of responsibility and pride in making a positive impact on individuals, communities and your Magazine and in this process we hope to solve your purpose and ours too.
+                    </div>
+                </div>
+                <div className={styles['why-mgzn']}>
+                    Why MGZN ?
+                    <p>
+                        At MGZN we appreciate your courage , as it takes courage to be creative to think different and  go against the wind. Everybody loves the art but the artist remains forgotten, his hardship remain buried unbeknownst to the world, MGZN aims at showing this artist to the world.
+                    </p>
+                </div>
+                <div className={styles['why-mgzn-right']}>
+                    What would you get if you come to MGZN?
+                    <p>
+                        MGZN will become your key to the third door, where you can skip lines to get ahead with your ambitions and interests. Coming together with like minded artists at our community will not only unlock several opportunities but also give wings to your creativity and hence maximizing your growth curve.
+                    </p>
                 </div>
             </div>
         </div>
