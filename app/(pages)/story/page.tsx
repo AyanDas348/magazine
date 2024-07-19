@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './index.module.css'
 
 const Story = () => {
@@ -9,6 +10,9 @@ const Story = () => {
                 </div>
                 <div className={styles.tagline}>
                     We work closely with artists across the globe and get the most valuable information, insights and resources for your growth. The name MGZN is very wisely chosen and it symbolizes how we artists are meant to get the limelight through our own magazines, where we not only publish our art but also the stories that made us.
+                </div>
+                <div>
+                    <Image src={'/assets/story.png'} width={100} height={100} className='min-w-full max-h-[600px]' alt='story'/>
                 </div>
                 <div className={styles.tagline}>
                     <span className={styles['bold-pr-20']}>

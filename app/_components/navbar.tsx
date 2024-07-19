@@ -6,7 +6,7 @@ import Logo from '@/public/logo.svg';
 import Logo1 from '@/public/Group.svg';
 import { navbarRoutes } from '@/constants/navbarRoutes';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // This hook provides the current pathname in a client component
+import { usePathname, useRouter } from 'next/navigation'; // This hook provides the current pathname in a client component
 import { ChevronDown, Menu, Search } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Sidebar from './sidebar';
@@ -14,7 +14,9 @@ import Sidebar from './sidebar';
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-    const currentPath = usePathname(); // Use usePathname hook to get the current path
+    const currentPath = usePathname();
+    const router = useRouter();
+    const [isSheetOpen, setIsSheetOpen] = useState(false);
 
     const isHomePage = currentPath === '/';
     const logoToDisplay = isHomePage ? Logo1 : Logo;
@@ -38,6 +40,10 @@ const Navbar = () => {
         };
     }, [lastScrollY]);
 
+    useEffect(() => {
+        setIsSheetOpen(false);
+    }, [currentPath])
+
     return (
         <nav className={`navbar flex w-full px-4 py-3 items-center justify-between xl:px-20 xl:mx-auto overflow-x-hidden fixed top-0 transition-transform duration-300 ${showNavbar ? 'transform translate-y-0' : 'transform -translate-y-full'} ${isHomePage ? 'text-white' : 'text-black'}`}>
             <div className='flex items-center justify-center'>
@@ -46,8 +52,8 @@ const Navbar = () => {
                 </Link>
             </div>
 
-            <Sheet>
-                <SheetTrigger className="">
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+                <SheetTrigger className="" onClick={() => setIsSheetOpen(true)}>
                     <Menu className='xl:hidden' />
                 </SheetTrigger>
                 <SheetContent side="top" className="p-0 hover:bg-[#7c7c6c] text-white !bg-[#7c7c6c] h-full">

@@ -1,5 +1,5 @@
 import EditorPicks from "./_components/editorPicks";
-import Hero from "./_components/hero";
+import Hero from "./_components/hero/hero";
 import MarketSummary from "./_components/marketSummary";
 import Origin from "./_components/origin";
 import Partners from "./_components/partners";
