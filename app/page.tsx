@@ -4,6 +4,7 @@ import MarketSummary from "./_components/marketSummary";
 import Origin from "./_components/origin";
 import Partners from "./_components/partners";
 import Trending from "./_components/trending";
+import WaitlistHero from "./_components/waitlistHero/hero";
 
 const topics = [
   {
@@ -49,14 +50,15 @@ const indices = [
 export default function Home() {
   return (
     <div className="w-full h-full overflow-x-hidden">
-      {/* <MarketSummary /> */}
+      {/* <MarketSummary />
       <div>
         <Hero />
       </div>
       <EditorPicks title="Magazine picks" topics={topics}/>
       <Trending />
       <Origin />
-      <Partners />
+      <Partners /> */}
+      <WaitlistHero />
     </div>
   );
 }

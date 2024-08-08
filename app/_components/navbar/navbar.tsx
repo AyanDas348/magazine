@@ -6,7 +6,7 @@ import Logo from '@/public/logo.svg';
 import Logo1 from '@/public/Group.svg';
 import { navbarRoutes } from '@/constants/navbarRoutes';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation'; // This hook provides the current pathname in a client component
+import { usePathname, useRouter } from 'next/navigation';
 import { ChevronDown, Menu, Search } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Sidebar from './sidebar';
@@ -44,8 +44,11 @@ const Navbar = () => {
         setIsSheetOpen(false);
     }, [currentPath])
 
+
+    const isSignInPage = currentPath === '/sign-in'
+
     return (
-        <nav className={`navbar flex w-full px-4 py-3 items-center justify-between xl:px-20 xl:mx-auto overflow-x-hidden fixed top-0 transition-transform duration-300 ${showNavbar ? 'transform translate-y-0' : 'transform -translate-y-full'} ${isHomePage ? 'text-white' : 'text-black'}`}>
+        <nav className={`navbar flex w-full px-4 py-3 items-center justify-between xl:px-20 xl:mx-auto overflow-x-hidden fixed top-0 transition-transform duration-300 ${showNavbar ? 'transform translate-y-0' : 'transform -translate-y-full'} ${isHomePage ? 'text-white border-none' : 'text-black'} border-b`}>
             <div className='flex items-center justify-center'>
                 <Link href={'/'}>
                     <Image src={logoToDisplay} alt='logo' width={150} height={10} />
@@ -60,7 +63,7 @@ const Navbar = () => {
                     <Sidebar />
                 </SheetContent>
             </Sheet>
-            <ul className='hidden xl:flex pl-16'>
+            <ul className={`hidden xl:flex pl-16 ${isSignInPage ? 'hidden' : ''}`}>
                 <div id='search' className={`rounded-[16px] flex justify-center items-center border w-[300px] ${isHomePage ? 'border-white' : 'border-black'}`}>
                     <div className='flex items-center justify-start gap-x-5 px-4 w-full'>
                         <Search />
@@ -79,9 +82,11 @@ const Navbar = () => {
                     );
                 })}
                 <li className='flex justify-center items-center cursor-pointer' key='user'>
-                    <div className='rounded-full bg-gray-400 h-8 w-8'>
-                        {/* User Icon or Avatar */}
-                    </div>
+                    <Link href={'/sign-in'}>
+                        <div className='rounded-full bg-gray-400 h-8 w-8'>
+                            {/* User Icon or Avatar */}
+                        </div>
+                    </Link>
                 </li>
             </ul>
         </nav>

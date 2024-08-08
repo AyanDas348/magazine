@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./_components/navbar";
+import Navbar from "./_components/navbar/navbar";
 import styles from './index.module.css';
 import Hero from "./_components/hero/hero";
 import Footer from "./_components/footer";
+import Waitlist from "./_components/waitlist";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,13 +24,14 @@ export default function RootLayout({
       <body>
         <div className={styles.rootlayout}>
           <div className={styles.navbar}>
-            <Navbar />
+            {/* <Navbar /> */}
+            <Waitlist />
           </div>
           <div className={styles.content}>
             {children}
           </div>
           <div>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </div>
       </body>

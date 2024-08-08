@@ -1,0 +1,12 @@
+.bg-image {
+    background-image: url('/assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+@media (max-width: 768px) {
+    .bg-image {
+        background-size: cover;
+    }
+}
